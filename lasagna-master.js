@@ -23,3 +23,16 @@ function preparationTime(layers, averagePreparationTime = 2) {
 
 // console.log(preparationTime(layers, 3));
 // console.log(preparationTime(layers));
+
+///---///
+
+function quantities(layers) {
+  let noodles = layers.filter((layer) => layer === "noodles").length * 50;
+  let sauce = layers.filter((layer) => layer === "sauce").length * 0.2;
+
+  return { noodles, sauce };
+}
+
+// console.log(
+//   quantities(["sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"])
+// );
