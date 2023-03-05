@@ -36,3 +36,16 @@ function quantities(layers) {
 // console.log(
 //   quantities(["sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"])
 // );
+
+///---///
+
+// const friendsList = ["noodles", "sauce", "mozzarella", "kampot pepper"];
+// const myList = ["noodles", "meat", "sauce", "mozzarella"];
+
+function addSecretIngredient(friendsList, myList) {
+  const secretIngredient = friendsList[friendsList.length - 1];
+  myList.push(secretIngredient);
+}
+
+// console.log(addSecretIngredient(friendsList, myList));
+// console.log(myList);
