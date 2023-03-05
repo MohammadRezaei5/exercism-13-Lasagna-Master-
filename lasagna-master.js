@@ -49,3 +49,23 @@ function addSecretIngredient(friendsList, myList) {
 
 // console.log(addSecretIngredient(friendsList, myList));
 // console.log(myList);
+
+///---///
+
+// const recipe = {
+//   noodles: 200,
+//   sauce: 0.5,
+//   mozzarella: 1,
+//   meat: 100
+// };
+
+function scaleRecipe(recipe, amount) {
+  const scaled = {};
+  for (const key in recipe) {
+    scaled[key] = (recipe[key] * amount) / 2;
+  }
+  return scaled;
+}
+
+// console.log(scaleRecipe(recipe, 4));
+// console.log(recipe);
